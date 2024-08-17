@@ -11,12 +11,14 @@ public class Portero extends Futbolista {
 	}
 	
 	
+	@Override
 	public int compareTo(Portero f) {
         return Math.abs(this.golesRecibidos - f.golesRecibidos);
     }
 	
 	
 	
+	@Override
 	public String toString() {
         return "El futbolista " + getNombre() + " tiene " + getEdad() + " anos, y juega de " + getPosicion() + 
                " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos + " goles.";
@@ -25,6 +27,7 @@ public class Portero extends Futbolista {
 	
 	
 	
+	@Override
 	public boolean jugarConLasManos() {
 		return true;
 	}

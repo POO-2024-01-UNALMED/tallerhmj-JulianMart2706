@@ -38,11 +38,12 @@ public abstract class Futbolista implements Comparable<Futbolista>{
 		 this.edad = edad;
 	 }
 	 
-	
+	 @Override
 	 public int compareto(Futbolista f) {
 		 return Integer.compare(this.edad, f.edad);
 	 }
 	 
+	 @Override
 	 public boolean equals(Object obj) {
 		    if (this == obj) return true; 
 		    if (obj == null || getClass() != obj.getClass()) return false;
