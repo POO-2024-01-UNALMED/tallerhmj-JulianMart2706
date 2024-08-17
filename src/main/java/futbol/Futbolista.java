@@ -48,14 +48,16 @@ public abstract class Futbolista implements Comparable<Futbolista>{
 		 return Integer.compare(this.edad, f.edad);
 	 }
 	 
-	 public boolean equals(Futbolista f) {
-		 if(this == f) return true;
-		 if (f == null) return false;
-		 return this.nombre.equals(f.nombre)&&
-				 this.edad == f.edad &&
-				 this.posicion;equals(f.posicion);
-	 }
-	 
+	 public boolean equals(Object obj) {
+		    if (this == obj) return true; 
+		    if (obj == null || getClass() != obj.getClass()) return false;
+		    
+		    Futbolista otro = (Futbolista) obj;
+
+		    return this.edad == otro.edad &&
+		           this.nombre.equals(otro.nombre) &&
+		           this.posicion.equals(otro.posicion);
+		}
 	 
 	 public String toString() {
 		 return "El futbolista " + nombre + " tiene " + edad + " anos, y juega de " + posicion + ".";
