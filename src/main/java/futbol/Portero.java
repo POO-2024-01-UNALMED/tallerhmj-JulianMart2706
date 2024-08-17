@@ -18,7 +18,7 @@ public abstract class Portero extends Futbolista {
 	
 	
 	public String toString() {
-        return "El futbolista " + getNombre() + " tiene " + getEdad() + " anos, y juega de " + posicion + 
+        return "El futbolista " + getNombre() + " tiene " + getEdad() + " anos, y juega de " + getPosicion() + 
                " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos + " goles.";
     }
 	
