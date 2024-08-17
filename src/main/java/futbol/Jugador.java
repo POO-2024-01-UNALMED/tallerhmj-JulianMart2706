@@ -4,8 +4,8 @@ public abstract class Jugador extends Futbolista {
 	public short golesMarcados;
 	public byte dorsal;
 	
-	public Jugador(String nombre, int edad, short golesMarcados, byte dorsal) {
-		super(nombre, edad);
+	public Jugador(String nombre, int edad, String posicion, short golesMarcados, byte dorsal) {
+		super(nombre, edad, posicion);
 		this.golesMarcados = golesMarcados;
 		this.dorsal = dorsal;
 	}
@@ -24,7 +24,7 @@ public abstract class Jugador extends Futbolista {
 	
 	
 	public String toString() {
-        return "El futbolista " + getNombre() + " tiene " + getEdad() + " anos, y juega de " + getPosicion() + 
+        return "El futbolista " + getNombre() + " tiene " + getEdad() + " anos, y juega de " + posicion + 
                " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados + " goles.";
 	}
 	
