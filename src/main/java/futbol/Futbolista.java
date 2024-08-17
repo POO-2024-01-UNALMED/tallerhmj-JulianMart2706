@@ -26,10 +26,6 @@ public abstract class Futbolista implements Comparable<Futbolista>{
 		 return edad;
 	 }
 	 
-	 public String getPosicion() {
-		 return posicion;
-	 }
-	 
 	 
 	 public void setNombre(String nombre) {
 		 this.nombre = nombre;
@@ -37,10 +33,6 @@ public abstract class Futbolista implements Comparable<Futbolista>{
 	 
 	 public void setEdad(int edad) {
 		 this.edad = edad;
-	 }
-	 
-	 public void setPosicion(String posicion) {
-		 this.posicion = posicion;
 	 }
 	 
 	
