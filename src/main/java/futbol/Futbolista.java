@@ -1,4 +1,4 @@
-package futbol;
+0package futbol;
 
 public abstract class Futbolista implements Comparable<Futbolista>{
 	private String nombre;
@@ -58,7 +58,6 @@ public abstract class Futbolista implements Comparable<Futbolista>{
 	 public String toString() {
 		 return "El futbolista " + nombre + " tiene " + edad + " anos, y juega de " + posicion + ".";
 	 }
-	 
 	 
 	 
 	 

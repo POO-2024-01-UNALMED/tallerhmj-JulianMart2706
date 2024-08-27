@@ -32,6 +32,7 @@ public class Jugador extends Futbolista {
 	
 	
 	
+	
 	@Override
 	public boolean jugarConLasManos() {
 		return false;
